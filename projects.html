@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Grid</title>
+<style>
+body {
+  background-color: black;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px; 
+  margin: 80px;
+}
+
+.image-grid img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; 
+}
+.image-grid img {
+  margin-bottom: 35px;
+}
+  .darker img{
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.darker:hover {
+  opacity: 0.7;
+}
+
+
+
+</style>
+</head>
+<body>
+  <h3 style="text-align: center; color: white; text-decoration: none;font-family: Verdana;">projekti</h3>
+  <div class="image-grid">
+  <img src="https://cdn.discordapp.com/attachments/564836919624728576/1199158690213802055/floral.png?ex=65c1868f&is=65af118f&hm=547905854b7b9508154fbbe0cb17e7684f46bf37c769ac6eaa90b2bf89d4f38a&.png"class="darker" alt="Image 1">
+  <img src="https://cdn.discordapp.com/attachments/564836919624728576/1199159006904713276/tetsuo11.jpg?ex=65c186da&is=65af11da&hm=3b866a91e88b1cc8301dfb7c613f5391a3952b21c04a4b234be7f54c4090fb4f&.jpg" class="darker"alt="Image 2">
+  <img src="https://cdn.discordapp.com/attachments/564836919624728576/1199316874647834665/hipodrom.png?ex=65c219e1&is=65afa4e1&hm=a347dc4127340301deced24b0c36c5287fba455e89ef32b1561eac4624576fa2&.jpg" class="darker"alt="Image 3">
+
+</div>
+
+</body>
+</html>
